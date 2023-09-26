@@ -14,7 +14,7 @@
         <div class="position-absolute top-50 start-50 translate-middle bg-dark bg-gradient text-light rounded">
             @foreach($results as $key => $result)
             @if($loop->last)
-            <img src="{{ asset(storage/images/'.$result) }}" style="height: 300px;width:300px">
+            <img src="{{ asset('storage/images/'.$result) }}" style="height: 300px;width:300px">
             @endif
             <div class="p-1">
                 <a>{{ $key }} = {{ $result }}</a>
